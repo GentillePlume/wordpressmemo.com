@@ -5,16 +5,21 @@ add_action( 'wp_enqueue_scripts', 'insert_css' );
 function insert_css() {
 
 	//########## Import all the stylesheets here like the example below ##########
-	//wp_register_style( 'ploume', 'https://source.ploume.io/latest/css/ploume.css' );
-	//wp_enqueue_style( 'ploume' );
+	wp_register_style( 'ploume', 'https://source.ploume.io/latest/css/ploume.css' );
+	wp_enqueue_style( 'ploume' );
 
+	wp_register_style( 'fonts', 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap' );
+	wp_enqueue_style( 'fonts' );
+
+	wp_register_style( 'ballooncss', 'https://cdnjs.cloudflare.com/ajax/libs/balloon-css/1.2.0/balloon.min.css' );
+	wp_enqueue_style( 'ballooncss' );
 
 	// Import the WordPress stylesheet (style.css)
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 
 	//########## Import all the javascript scripts here like the example below ##########
-	//wp_register_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js' );
-	//wp_enqueue_script( 'jquery' );
+	wp_register_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js' );
+ 	wp_enqueue_script( 'jquery' );
 }
 
 add_theme_support( 'menus' );
