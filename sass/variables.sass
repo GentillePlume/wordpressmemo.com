@@ -1,0 +1,20 @@
+$blue: #0073AA
+$lightblue: #00A0D2
+$darkgrey: #191E23
+
+$colors: ("blue": $blue, "lightblue": $lightblue, "darkgrey": $darkgrey)
+
+@each $colorname, $color in $colors
+  .is-#{$colorname}
+    background-color: $color
+  .is-#{$colorname}
+    background-color: $color
+    &.button
+      color: white
+  .is-#{$colorname}
+    background-color: $color
+    &.button
+      color: white
+
+  .c-#{$colorname}
+    color: $color
