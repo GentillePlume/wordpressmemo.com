@@ -1,1 +1,2 @@
-
+# WordPress Memo
+![GitHub last commit](https://img.shields.io/github/last-commit/GentillePlume/wordpressmemo.com?style=for-the-badge) ![GitHub contributors](https://img.shields.io/github/contributors/GentillePlume/wordpressmemo.com?style=for-the-badge) ![Website](https://img.shields.io/website?down_color=red&down_message=down&style=for-the-badge&up_message=online&url=https%3A%2F%2Fwordpressmemo.com)
