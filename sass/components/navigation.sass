@@ -1,0 +1,24 @@
+.navigation
+  ul
+    display: flex
+    flex-flow: row
+    .menu-item
+      position: relative
+      margin-right: 1rem
+      &:last-child
+        margin-right: 0
+      &.current-menu-item
+        a
+          &::after
+            content: ''
+            position: absolute
+            height: 25%
+            background-color: $blue
+            width: 110%
+            opacity: .25
+            bottom: 10%
+            left: -5%
+      a
+        color: $darkgrey
+        font-size: 1.25rem
+        font-weight: 600
