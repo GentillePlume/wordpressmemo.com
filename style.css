@@ -287,6 +287,10 @@ html body .section__subtitle {
   height: 7.5rem;
 }
 
+.postcard__cta {
+  width: calc(100% - 2rem);
+}
+
 .popup {
   display: flex;
   flex-direction: column;
@@ -346,6 +350,19 @@ pre.code {
   color: green;
 }
 
+.yachtcard {
+  overflow: hidden;
+  transition: transform .1s ease-in-out;
+}
+
+.yachtcard:hover {
+  transform: scale(1.025);
+}
+
+.yachtcard__overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .home .header {
   min-height: 50vh;
 }
@@ -371,6 +388,16 @@ pre.code {
     margin-right: 1.33333%;
   }
   .home .news__list .postcard:nth-child(4n+0) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home .yachts__list .yachtcard {
+    width: 24%;
+    margin-right: 1.33333%;
+  }
+  .home .yachts__list .yachtcard:nth-child(4n+0) {
     margin-right: 0;
   }
 }
