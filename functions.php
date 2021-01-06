@@ -35,10 +35,10 @@ register_nav_menus( [
 add_theme_support( 'post-thumbnails' );
 
 function create_post_type() {
-	register_post_type( 'items',
+	register_post_type( 'yacht',
 		array(
-			'label'              => __( 'Items' ),
-			'singular_label'     => __( 'Item' ),
+			'label'              => __( 'Yachts' ),
+			'singular_label'     => __( 'Yacht' ),
 			'add_new_item'       => __( 'Add item' ),
 			'edit_item'          => __( 'Edit item' ),
 			'new_item'           => __( 'New item' ),
@@ -54,7 +54,7 @@ function create_post_type() {
 			'menu_icon'          => 'dashicons-screenoptions',
 			'taxonomies'         => array( 'types' ),
 			'supports'           => array( 'title', 'editor', 'thumbnail' ),
-			'rewrite'            => array( 'slug' => 'items', 'with_front' => true )
+			'rewrite'            => array( 'slug' => 'yacht', 'with_front' => true )
 		)
 	);
 }
