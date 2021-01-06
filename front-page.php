@@ -45,7 +45,7 @@
 
       <div class="container flex-c">
 
-        <h2 class="section__title">Last news</h2>
+        <h2 class="section__title">Last posts</h2>
         <p class="section__subtitle">This section get the last 4 posts</p>
 
         <div class="news__list flex-r">
