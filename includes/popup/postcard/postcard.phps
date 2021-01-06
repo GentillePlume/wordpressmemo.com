@@ -1,4 +1,4 @@
-<article class="postcard border-5 shadow">
+<article class="postcard border-5 shadow flex-c">
 
   <div class="postcard__thumbnail bg-center bg-cover border-5" style="background-image: url('<?php the_post_thumbnail_url(); ?>')"></div>
 
@@ -9,11 +9,11 @@
     </p>
 
     <div class="postcard__excerpt is-7-xs mt-1-xs text-justify">
-      <?php the_excerpt(); ?>
+      <?php echo wp_trim_words(get_the_excerpt(), 15, '...'); ?>
     </div>
 
-    <a class="button is-bordered is-blue w-full is-small-xs mt-3-xs" href="<?php the_permalink(); ?>">More</a>
-
   </div>
+
+  <a class="postcard__cta button is-bordered is-blue w-full is-small-xs mt-auto mb-2 mh-auto" href="<?php the_permalink(); ?>">More</a>
 
 </article>

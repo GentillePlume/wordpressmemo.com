@@ -21,7 +21,6 @@
 
       <script>
       $("#html > code").addClass("language-html");
-
       </script>
 
     </div>
