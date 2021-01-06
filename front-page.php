@@ -90,6 +90,55 @@
 
     </section>
 
+    <section class="section yachts">
+
+      <div class="container flex-c">
+
+        <h2 class="section__title">Last Lagoon yachts</h2>
+        <p class="section__subtitle">This section get the last 4 yachts (Custom Post Type)</p>
+
+        <div class="yachts__list flex-r">
+
+          <?php
+           $args = array(
+               'post_type' => 'yacht',
+               'posts_per_page' => 4,
+               'orderby' => 'menu_order',
+               'order' => 'ASC',
+           );
+          ?>
+
+          <?php $the_query = new WP_Query($args); ?>
+
+         <?php if ($the_query->have_posts()) : ?>
+             <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+
+               <?php include( 'includes/yachtcard.php' ); ?>
+
+             <?php endwhile; ?>
+           <?php else : ?>
+
+             <p>
+               empty
+             </p>
+
+           <?php endif; ?>
+
+        </div>
+
+        <div class="buttons flex-r v-centered mt-3-xs">
+          <a class="button is-blue is-bordered mr-3-xs" href="<?php bloginfo('url'); ?>/yachts">All the yachts</a>
+          <button class="button is-orange is-bordered mr-3-xs" onclick="popupSwitch('lastnews')">Get 4 CPT code</button>
+          <button class="button is-orange is-bordered mr-3-xs" onclick="popupSwitch('postcard')">Post card code</button>
+        </div>
+
+      </div>
+
+      <!-- <?php include get_template_directory() . '/includes/popup/cpt/cpt.php'; ?> -->
+      <!-- <?php include get_template_directory() . '/includes/popup/cptcard/cptcard.php'; ?> -->
+
+    </section>
+
 
   </main>
 
