@@ -32,9 +32,11 @@
       </div>
 
       <div class="cta ml-auto">
-        <button class="button is-caution is-bordered">Get menus</button>
+        <button class="button is-caution is-bordered" onclick="popupSwitch('navigation')">Get menus</button>
       </div>
 
     </div>
 
   </div>
+
+  <?php include get_template_directory() . '/includes/popup/navigation/navigation.php'; ?>
