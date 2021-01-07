@@ -1,6 +1,6 @@
 <?php wp_footer(); ?>
 
-<footer class="is-blue pv-3">
+<footer class="is-blue pv-3 mt-5-xs">
   <?php echo file_get_contents('https://melvin-lemoine.me/source/credit.php'); ?>
 </footer>
 
