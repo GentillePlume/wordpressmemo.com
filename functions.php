@@ -14,6 +14,9 @@ function insert_css() {
 	wp_register_style( 'ballooncss', 'https://cdnjs.cloudflare.com/ajax/libs/balloon-css/1.2.0/balloon.min.css' );
 	wp_enqueue_style( 'ballooncss' );
 
+	wp_register_style( 'fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' );
+	wp_enqueue_style( 'fontawesome' );
+
 	// Import the WordPress stylesheet (style.css)
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 
