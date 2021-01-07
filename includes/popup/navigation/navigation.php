@@ -19,7 +19,6 @@
     </div>
 
     <div class="popup__box_footer flex-r v-centered">
-      <button class="button is-small-xs is-bordered is-orange mr-1-xs" onclick="popupSwitch(); popupSwitch('postcard')">Show postcard code</button>
       <button class="button is-small-xs is-bordered is-red" onclick="popupSwitch()">Close</button>
     </div>
 
