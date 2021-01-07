@@ -174,11 +174,24 @@ html body .section {
   padding: 5rem 0;
 }
 
+html body .section__title.is-white, html body .section__subtitle.is-white {
+  color: white;
+}
+
+html body .section__title.is-white::before, html body .section__subtitle.is-white::before {
+  background-color: white;
+}
+
 html body .section__title {
   font-weight: bold;
   color: #0073AA;
   font-size: 1rem;
   width: 100%;
+  margin-bottom: 1rem;
+}
+
+html body .section__title.nomb {
+  margin-bottom: 0;
 }
 
 html body .section__title::before {
@@ -400,6 +413,14 @@ pre.code {
   .home .yachts__list .yachtcard:nth-child(4n+0) {
     margin-right: 0;
   }
+}
+
+.home .startertheme {
+  padding: 2.5rem 0;
+}
+
+.home .startertheme__cta {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

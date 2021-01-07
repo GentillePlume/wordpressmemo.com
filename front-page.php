@@ -94,7 +94,7 @@
 
       <div class="container flex-c">
 
-        <h2 class="section__title">Last yacht Custom Post Type posts</h2>
+        <h2 class="section__title nomb">Last yacht Custom Post Type posts</h2>
         <p class="section__subtitle">This section get the last 4 yacht posts (Custom Post Type)</p>
 
         <div class="yachts__list flex-r">
@@ -136,6 +136,51 @@
 
       <?php include get_template_directory() . '/includes/popup/lastyachts/lastyachts.php'; ?>
       <?php include get_template_directory() . '/includes/popup/yachtcard/yachtcard.php'; ?>
+
+    </section>
+
+    <section class="section startertheme is-blue">
+
+      <div class="container flex-r wrap space-between h-centered">
+
+        <div class="startertheme__content">
+          <h2 class="section__title is-white nomb">WordPress Starter theme</h2>
+          <p class="section__subtitle is-white">Get the WordPress Starter theme to begin develop your own theme without wasting time.</p>
+        </div>
+
+          <a class="startertheme__cta button is-white is-small-xs is-large-l has-icon" href="https://github.com/GentillePlume/WordPress-starter-theme" target="_blank">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            Get it
+          </a>
+
+      </div>
+
+    </section>
+
+    <section class="section contribute">
+
+      <div class="container">
+
+        <h2 class="section__title">Contribute</h2>
+        <!-- <p class="section__subtitle">Get the WordPress Starter theme to begin develop your own theme without wasting time.</p> -->
+
+        <div class="contribute__content is-7-xs is-6-m w-full-xs w-half-m">
+
+          <div class="contribute__content_stats flex-r wrap mb-1-xs">
+            <img class="contribute__content_stats_stat" src="https://img.shields.io/github/last-commit/GentillePlume/wordpressmemo.com?style=for-the-badge" alt="github repository stat"/>
+            <img class="contribute__content_stats_stat" src="https://img.shields.io/github/contributors/GentillePlume/wordpressmemo.com?style=for-the-badge" alt="github repository stat"/>
+          </div>
+
+          WordPress Memo is a collaborative project developed for help WordPress developers to work faster. If you want to add or modify site content, just go on github voilà.
+        </div>
+
+        <div class="contribute__contributors w-full-xs w-half-m">
+
+        </div>
+
+      </div>
 
     </section>
 
