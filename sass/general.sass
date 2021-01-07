@@ -5,12 +5,23 @@ html
     .section
       padding: 5rem 0
 
+      &__title,
+      &__subtitle
+        &.is-white
+          color: white
+
+          &::before
+            background-color: white
+
       &__title
         font-weight: bold
         color: $blue
         font-size: 1rem
         width: 100%
-        // margin-bottom: 1rem
+        margin-bottom: 1rem
+
+        &.nomb
+          margin-bottom: 0
 
         &::before
           display: inline-block
@@ -41,7 +52,6 @@ html
   background-color: $blue
   color: white
   text-align: center
-
 
   .container
     display: flex
