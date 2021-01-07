@@ -79,8 +79,8 @@
 
         <div class="buttons flex-r v-centered mt-3-xs">
           <button class="button is-blue is-bordered mr-3-xs">Blog page</button>
-          <button class="button is-orange is-bordered mr-3-xs" onclick="popupSwitch('lastnews')">Get 4 last post code</button>
-          <button class="button is-orange is-bordered mr-3-xs" onclick="popupSwitch('postcard')">Post card code</button>
+          <button class="button is-orange is-bordered mr-3-xs" onclick="popupSwitch('lastnews')">Get 4 last post</button>
+          <button class="button is-orange is-bordered mr-3-xs" onclick="popupSwitch('postcard')">Show post card</button>
         </div>
 
       </div>
@@ -94,8 +94,8 @@
 
       <div class="container flex-c">
 
-        <h2 class="section__title">Last Lagoon yachts</h2>
-        <p class="section__subtitle">This section get the last 4 yachts (Custom Post Type)</p>
+        <h2 class="section__title">Last yacht Custom Post Type posts</h2>
+        <p class="section__subtitle">This section get the last 4 yacht posts (Custom Post Type)</p>
 
         <div class="yachts__list flex-r">
 
@@ -128,14 +128,14 @@
 
         <div class="buttons flex-r v-centered mt-3-xs">
           <a class="button is-blue is-bordered mr-3-xs" href="<?php bloginfo('url'); ?>/yachts">All the yachts</a>
-          <button class="button is-orange is-bordered mr-3-xs" onclick="popupSwitch('lastnews')">Get 4 CPT code</button>
-          <button class="button is-orange is-bordered mr-3-xs" onclick="popupSwitch('postcard')">Post card code</button>
+          <button class="button is-orange is-bordered mr-3-xs" onclick="popupSwitch('lastyachts')">Get 4 last CPT</button>
+          <button class="button is-orange is-bordered mr-3-xs" onclick="popupSwitch('yachtcard')">Show yacht card</button>
         </div>
 
       </div>
 
-      <!-- <?php include get_template_directory() . '/includes/popup/cpt/cpt.php'; ?> -->
-      <!-- <?php include get_template_directory() . '/includes/popup/cptcard/cptcard.php'; ?> -->
+      <?php include get_template_directory() . '/includes/popup/lastyachts/lastyachts.php'; ?>
+      <?php include get_template_directory() . '/includes/popup/yachtcard/yachtcard.php'; ?>
 
     </section>
 
