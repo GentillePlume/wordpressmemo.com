@@ -26,14 +26,14 @@
 
         <h2 class="section__title">Introduction</h2>
 
-        <div class="introduction__content w-half-m text-justify">
+        <div class="introduction__content w-half-m text-justify is-7-xs is-6-m">
           This website is a WordPress theme with usual code pieces for display and get usual things.
           To show the code of elements, click on the orange button, or hover your mouse.
           <br />
           For a better content management, ACF <i>(Advanced Custom Fields)</i> is used.
         </div>
 
-        <div class="introduction__illustration content-centered w-half-m">
+        <div class="introduction__illustration content-centered w-half-m mt-3-xs mt-0-m">
           <img class="introduction__illustration_img border-5" src="<?php bloginfo('template_url'); ?>/images/front-page/introduction.gif" alt="illustration"/>
         </div>
 
@@ -48,7 +48,7 @@
         <h2 class="section__title">Last posts</h2>
         <p class="section__subtitle">This section get the last 4 posts</p>
 
-        <div class="news__list flex-r">
+        <div class="news__list flex-r wrap">
 
           <?php
            $args = array(
@@ -77,10 +77,10 @@
 
         </div>
 
-        <div class="buttons flex-r v-centered mt-3-xs">
-          <button class="button is-blue is-bordered mr-3-xs">Blog page</button>
-          <button class="button is-orange is-bordered mr-3-xs" onclick="popupSwitch('lastnews')">Get 4 last post</button>
-          <button class="button is-orange is-bordered mr-3-xs" onclick="popupSwitch('postcard')">Show post card</button>
+        <div class="buttons">
+          <button class="button is-blue is-bordered">Blog page</button>
+          <button class="button is-orange is-bordered" onclick="popupSwitch('lastnews')">Get 4 last post</button>
+          <button class="button is-orange is-bordered" onclick="popupSwitch('postcard')">Show post card</button>
         </div>
 
       </div>
@@ -94,10 +94,10 @@
 
       <div class="container flex-c">
 
-        <h2 class="section__title nomb">Last yacht Custom Post Type posts</h2>
+        <h2 class="section__title nomb">Last yachts</h2>
         <p class="section__subtitle">This section get the last 4 yacht posts (Custom Post Type)</p>
 
-        <div class="yachts__list flex-r">
+        <div class="yachts__list flex-r wrap">
 
           <?php
            $args = array(
@@ -126,10 +126,10 @@
 
         </div>
 
-        <div class="buttons flex-r v-centered mt-3-xs">
-          <a class="button is-blue is-bordered mr-3-xs" href="<?php bloginfo('url'); ?>/yachts">All the yachts</a>
-          <button class="button is-orange is-bordered mr-3-xs" onclick="popupSwitch('lastyachts')">Get 4 last CPT</button>
-          <button class="button is-orange is-bordered mr-3-xs" onclick="popupSwitch('yachtcard')">Show yacht card</button>
+        <div class="buttons">
+          <a class="button is-blue is-bordered" href="<?php bloginfo('url'); ?>/yachts">All the yachts</a>
+          <button class="button is-orange is-bordered" onclick="popupSwitch('lastyachts')">Get 4 last CPT</button>
+          <button class="button is-orange is-bordered" onclick="popupSwitch('yachtcard')">Show yacht card</button>
         </div>
 
       </div>
@@ -148,7 +148,7 @@
           <p class="section__subtitle is-white">Get the WordPress Starter theme to begin develop your own theme without wasting time.</p>
         </div>
 
-          <a class="startertheme__cta button is-white is-small-xs is-large-l has-icon" href="https://github.com/GentillePlume/WordPress-starter-theme" target="_blank">
+          <a class="startertheme__cta button is-white is-large has-icon" href="https://github.com/GentillePlume/WordPress-starter-theme" target="_blank">
             <span class="icon">
               <i class="fab fa-github"></i>
             </span>

@@ -16,7 +16,7 @@ html
       &__title
         font-weight: bold
         color: $blue
-        font-size: 1rem
+        font-size: 1.5rem
         width: 100%
         margin-bottom: 1rem
 
@@ -65,9 +65,13 @@ html
     font-size: .75rem
 
   &__title
-    font-size: 1rem
+    font-size: 1.5rem
     font-weight: bold
 
+    @media screen and (min-width: 768px)
+      font-size: 1.75rem
+    @media screen and (min-width: 1200px)
+      font-size: 2.25rem
     @media screen and (min-width: 1200px)
       font-size: 3rem
 

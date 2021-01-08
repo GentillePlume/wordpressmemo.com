@@ -1,4 +1,4 @@
-<a class="yachtcard border-5 shadow flex-c bg-center bg-cover has-overlay border-5 p-2-m bg-norepeat" style="background-image: url('<?php the_post_thumbnail_url(); ?>')" href="<?php the_permalink(); ?>">
+<a class="yachtcard border-5 shadow flex-c bg-center bg-cover has-overlay border-5 p-1-xs p-2-m bg-norepeat" style="background-image: url('<?php the_post_thumbnail_url(); ?>')" href="<?php the_permalink(); ?>">
 
   <div class="yachtcard__overlay is-overlay"></div>
 
