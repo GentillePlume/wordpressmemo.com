@@ -231,7 +231,7 @@ html body .section__subtitle.nomb {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 30vh;
   background-color: #0073AA;
   color: white;
   text-align: center;
@@ -567,6 +567,30 @@ pre.code {
 
 .category .postcard__categories {
   display: none;
+}
+
+.post__thumbnail {
+  height: 20rem;
+  border-radius: 10px;
+}
+
+.post__thumbnail_categories .button {
+  margin-right: .25rem;
+}
+
+.post__thumbnail_categories .button:last-child {
+  margin-right: 0;
+}
+
+.post__thumbnail_overlay {
+  background: #020024;
+  background: linear-gradient(0deg, rgba(2, 0, 36, 0.75) 0%, rgba(255, 255, 255, 0) 75%);
+  border-radius: 10px;
+}
+
+.post__author_image {
+  width: 5rem;
+  height: 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
