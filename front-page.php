@@ -145,7 +145,7 @@
 
         <div class="startertheme__content">
           <h2 class="section__title is-white nomb">WordPress Starter theme</h2>
-          <p class="section__subtitle is-white">Get the WordPress Starter theme to begin develop your own theme without wasting time.</p>
+          <p class="section__subtitle is-white nomb">Get the WordPress Starter theme to begin develop your own theme without wasting time.</p>
         </div>
 
           <a class="startertheme__cta button is-white is-large has-icon" href="https://github.com/GentillePlume/WordPress-starter-theme" target="_blank">
