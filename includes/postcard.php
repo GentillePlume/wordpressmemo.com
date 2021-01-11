@@ -8,6 +8,18 @@
       <?php the_title(); ?>
     </p>
 
+    <div class="postcard__categories flex-r wrap mt-1-xs">
+
+      <?php foreach((get_the_category()) as $category) : ?>
+
+        <a class="button is-light is-small is-bordered" href="<?php echo get_category_link($category->term_id) ?>">
+          <?php echo $category->name; ?>
+        </a>
+
+      <?php endforeach; ?>
+
+    </div>
+
     <div class="postcard__excerpt is-7-xs mt-1-xs text-justify">
       <?php echo wp_trim_words(get_the_excerpt(), 15, '...'); ?>
     </div>
