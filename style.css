@@ -216,6 +216,10 @@ html body .section__subtitle {
   margin-bottom: 1rem;
 }
 
+html body .section__subtitle.nomb {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 576px) {
   html body .section__subtitle {
     font-size: 1rem;
@@ -319,6 +323,14 @@ html body .section__subtitle {
   transform: scale(1.025);
   background-size: 100%;
   transition: background-size .1s ease-in-out, transform .1s ease-in-out;
+}
+
+.postcard__categories .button {
+  margin-right: .25rem;
+}
+
+.postcard__categories .button:last-child {
+  margin-right: 0;
 }
 
 .postcard__cta {
@@ -551,6 +563,10 @@ pre.code {
   .blog .categories .categorycard:nth-child(5n+0) {
     margin-right: 0;
   }
+}
+
+.category .postcard__categories {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
