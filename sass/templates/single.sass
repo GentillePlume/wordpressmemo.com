@@ -1,0 +1,23 @@
+$post__thumbnail_borderRadius: 10px
+.post
+  &__thumbnail
+    height: 20rem
+    border-radius: $post__thumbnail_borderRadius
+
+    &_categories
+      .button
+        margin-right: .25rem
+        &:last-child
+          margin-right: 0
+
+    &_overlay
+      background: rgb(2,0,36)
+      background: linear-gradient(0deg, rgba(2,0,36,.75) 0%, rgba(255,255,255,0) 75%)
+      border-radius: $post__thumbnail_borderRadius
+  &__content
+  &__author
+    &_image
+      width: 5rem
+      height: 5rem
+    &_informations
+      &_name
