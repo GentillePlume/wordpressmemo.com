@@ -545,10 +545,44 @@ pre.code {
   color: black;
 }
 
+.blog .posts .postcard {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  .blog .posts .postcard {
+    width: 48%;
+    margin-right: 4%;
+  }
+  .blog .posts .postcard:nth-child(2n+0) {
+    margin-right: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .blog .posts .postcard {
-    width: 24%;
-    margin-right: 1.33333%;
+    width: calc(100% / 3 - 2%);
+    margin-right: 3%;
+  }
+  .blog .posts .postcard:nth-child(2n+0) {
+    margin-right: 3%;
+  }
+  .blog .posts .postcard:nth-child(3n+0) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .blog .posts .postcard {
+    width: 23%;
+    margin-right: 2%;
+  }
+  .blog .posts .postcard:nth-child(2n+0) {
+    margin-right: 2%;
+  }
+  .blog .posts .postcard:nth-child(3n+0) {
+    margin-right: 2%;
   }
   .blog .posts .postcard:nth-child(4n+0) {
     margin-right: 0;
