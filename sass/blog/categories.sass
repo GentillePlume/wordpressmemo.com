@@ -1,6 +1,24 @@
 .categories
   .categorycard
-    @media screen and (min-width: 1024px)
+    width: 100%
+
+    @media screen and (min-width: 576px)
+      width: 49%
+      margin-right: calc(2% / 1)
+
+      &:nth-child(2n+0)
+        margin-right: 0
+
+    @media screen and (min-width: 768px)
+      width: calc(100% / 3 - 1%)
+      margin-right: calc(3% / 2)
+
+      &:nth-child(2n+0)
+        margin-right: calc(3% / 2)
+      &:nth-child(3n+0)
+        margin-right: 0
+
+    @media screen and (min-width: 1200px)
       width: 19%
       margin-right: calc(5% /4)
 

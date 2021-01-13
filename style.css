@@ -555,7 +555,34 @@ pre.code {
   }
 }
 
-@media screen and (min-width: 1024px) {
+.blog .categories .categorycard {
+  width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .blog .categories .categorycard {
+    width: 49%;
+    margin-right: calc(2% / 1);
+  }
+  .blog .categories .categorycard:nth-child(2n+0) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blog .categories .categorycard {
+    width: calc(100% / 3 - 1%);
+    margin-right: calc(3% / 2);
+  }
+  .blog .categories .categorycard:nth-child(2n+0) {
+    margin-right: calc(3% / 2);
+  }
+  .blog .categories .categorycard:nth-child(3n+0) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .blog .categories .categorycard {
     width: 19%;
     margin-right: calc(5% /4);
