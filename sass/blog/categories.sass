@@ -1,6 +1,10 @@
 .categories
   .categorycard
     width: 100%
+    transition: transform .1s ease-in-out
+
+    &:hover
+      transform: scale(1.025)
 
     @media screen and (min-width: 576px)
       width: 49%
