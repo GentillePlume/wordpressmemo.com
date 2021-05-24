@@ -1,0 +1,24 @@
+$blue: #0073AA
+$lightblue: #00A0D2
+$darkgrey: #191E23
+$orange: #F56E28
+$mediumblue: #00A0D2
+$red: #DC3232
+$darksilvergrey: #82878C
+
+$colors: ("$darksilvergrey": $darksilvergrey, "blue": $blue, "lightblue": $lightblue, "darkgrey": $darkgrey, "orange": $orange, "mediumblue": mediumblue, "red": $red)
+
+@each $colorname, $color in $colors
+  .is-#{$colorname}
+    background-color: $color
+  .is-#{$colorname}
+    background-color: $color
+    &.button
+      color: white
+  .is-#{$colorname}
+    background-color: $color
+    &.button
+      color: white
+
+  .c-#{$colorname}
+    color: $color

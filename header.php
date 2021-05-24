@@ -13,4 +13,30 @@
 </head>
 
 
-<body <?php body_class(); ?>>
+<body <?php body_class('body'); ?>>
+
+  <div class="navigation is-white pv-3-m">
+
+    <div class="container flex-c-xs flex-r-m h-centered-m">
+
+      <div class="menus">
+        <?php
+          wp_nav_menu(
+            array(
+              'theme_location' => 'main-menu',
+              'container' => 'nav',
+              'container_class' => 'nav',
+              'menu_class' => 'nav'
+          ));
+        ?>
+      </div>
+
+      <div class="cta ml-auto">
+        <button class="button is-caution is-bordered" onclick="popupSwitch('navigation')">Get menus</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <?php include get_template_directory() . '/includes/popup/navigation/navigation.php'; ?>

@@ -1,0 +1,22 @@
+.postcard
+  &:hover
+    .postcard__thumbnail
+      background-size: 110%
+      transform: scale(1)
+
+  &__thumbnail
+    height: 7.5rem
+
+    transform: scale(1.025)
+    background-size: 100%
+
+    transition: background-size .1s ease-in-out, transform .1s ease-in-out
+  &__categories
+    .button
+      margin-right: .25rem
+      &:last-child
+        margin-right: 0
+
+  &__title
+  &__cta
+    width: calc(100% - 2rem)

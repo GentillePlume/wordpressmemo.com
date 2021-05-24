@@ -1,0 +1,30 @@
+.categories
+  .categorycard
+    width: 100%
+    transition: transform .1s ease-in-out
+
+    &:hover
+      transform: scale(1.025)
+
+    @media screen and (min-width: 576px)
+      width: 49%
+      margin-right: calc(2% / 1)
+
+      &:nth-child(2n+0)
+        margin-right: 0
+
+    @media screen and (min-width: 768px)
+      width: calc(100% / 3 - 1%)
+      margin-right: calc(3% / 2)
+
+      &:nth-child(2n+0)
+        margin-right: calc(3% / 2)
+      &:nth-child(3n+0)
+        margin-right: 0
+
+    @media screen and (min-width: 1200px)
+      width: 19%
+      margin-right: calc(5% /4)
+
+      &:nth-child(5n+0)
+        margin-right: 0
